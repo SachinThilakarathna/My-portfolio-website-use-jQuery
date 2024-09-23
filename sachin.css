@@ -1,0 +1,169 @@
+body{
+    margin: 0;
+    background-color: rgba(27, 28, 41, 1);
+}
+
+
+
+
+/* header section */
+.header{
+    position: absolute;
+    background-color: rgba(43, 43, 67, 0.47);
+    margin: 0;
+    padding: 0px;
+    height: 139px;
+    width: 100%;
+    z-index: 3;
+
+}
+
+.list1{
+    position: relative;
+    float:inline-end;
+}
+#list1{
+    position: relative;
+    display:flex;
+    background-color: rgba(27, 28, 41, 1);
+    border-radius: 50px;
+    color: rgb(188, 193, 197);
+    margin-right: 100px;
+    height: 65px;
+    margin-top: 37px;
+    margin-bottom: 37px;
+}
+
+.li1{
+    position: relative;
+    margin: 27px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-right: 50px;
+    margin-top: 24px;
+}
+
+.logo{
+    position: relative;
+    width: 80px;
+    margin-left: 100px;
+    margin-top: 37px;
+
+
+}
+
+
+
+
+/* mode */
+
+.mode{
+    position: fixed;
+    width: 100%;
+    top:100px;
+    height: 100px;
+}
+.mode1{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: blanchedalmond;
+    float: inline-end;
+}
+
+
+/* >Theme */
+#theme{
+    position:absolute;
+    height: 100px;
+    top:307px;
+    opacity:0;
+    overflow: hidden;
+    width:450px;
+    left:-100px;
+
+
+}
+
+.theme{
+    color: aliceblue;
+    /* background-color: aqua; */
+    font-size: 45px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+#output {
+    font-size: 24px;
+    font-family: 'Arial', sans-serif;
+    white-space: pre;
+    font-size: 45px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: aliceblue;
+
+}
+.themepara{
+    position:absolute;
+    top:430px;
+    font-size: 18px;
+    color: aliceblue;
+    margin-right: 100px;
+    left:-100px;
+    opacity: 0;
+}
+
+
+
+.mainimg{
+    position: relative;
+    float: inline-end;
+    top:284px;
+    width: 335px;
+    height: 355px;                       
+    border-radius: 80%;
+    box-shadow: 0 0 455px rgba(213, 100, 80, 0.4);
+    z-index: 2;
+}
+
+
+
+
+/* connect and resume download section */
+
+
+.connect{
+    position: relative;
+    top:554px;
+    width:203px;
+    height: 55px;
+    font-size: 18px;
+    color: aliceblue;
+    margin-left: 100px;
+    border: 5px solid #ffffff80;
+    border-radius: 50px;
+    display: inline-flex;
+    justify-content: center;
+}
+.connectp{
+    position:relative;
+    width:70px;
+}
+.connectimg{
+    margin-top: 17px;
+    width:24px;
+    height: 24px   
+}
+
+.resume{
+    position: relative;
+    top:554px;
+    width:203px;
+    height: 55px;
+    font-size: 18px;
+    color: aliceblue;
+    margin-left: 34px;
+    border: 5px solid #ffffff80;
+    border-radius: 50px;
+    display: inline-flex;
+    justify-content: center;
+
+}
+

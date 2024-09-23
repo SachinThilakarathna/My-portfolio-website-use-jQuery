@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="jquery-ui/jquery-ui.css" rel="stylesheet">
+    <script src="jquery-ui/jquery-ui.js"></script>
+
+    <link rel="stylesheet" href="sachin.css">
+
+    <script src="jquery.min.js"></script>
+    <title>sachin Thilakarathna</title>
+
+</head>
+
+<body>
+    <div class="header">
+        <img src="sachint_thilakarathna_behance_linkedin_freelancer_behance.png" alt="" class="logo"></img>
+        <div class="list1">
+            <ul id="list1" type="none">
+                <li class="li1">Home</li>
+                <li class="li1">About</li>
+                <li class="li1">Projects</li>
+                <li class="li1">Contact</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="mode">
+        <div class="mode1"></div>
+    </div>
+
+
+    <div id="theme">
+        <div class="theme">Hello, I'm </div>
+        <div id="output"></div>
+    </div>
+    <div class="themepara">A Developer based in Sri Lanka, specializing in building exceptional<br> websites,
+        applications, and everything in between.</div>
+    <img src="sachin_thilakarathna_github_linkedIn_sachn (2).jpg" alt="sachin" class="mainimg">
+    
+    <div class="connect"><p class="connectp">Connect</p><img src="mail.png" alt="msg" class="connectimg"></div>
+    <div class="resume"><p class="resumep">Resume</p></div>
+
+
+
+
+
+
+
+
+    <script type="text/javascript">
+
+
+
+
+
+
+
+
+
+        // theme section.........
+        $(document).ready(function () {
+            $('#theme, .themepara').animate({
+                left: '100px',
+                opacity: '1',
+
+            }, 1200)
+        });
+        $(document).ready(function () {
+            $('.mainimg').animate({
+                right: '100px',
+                opacity: '1',
+
+            }, 1200)
+        });
+
+
+        $(document).ready(function () {
+            var texts = ["Sachin Thilkarathna .", "A Web Developer .", "A Designer ."];
+            var index = 0; // Current text index
+            var textIndex = 0; // Current character index
+            var isDeleting = false; // Whether currently deleting text
+            var speed = 100; // Speed of typing/deleting
+
+            function typeAndDelete() {
+                var currentText = texts[index];
+
+                if (!isDeleting) {
+                    // Typing effect
+                    $('#output').text(currentText.substring(0, textIndex + 1));
+                    textIndex++;
+
+                    if (textIndex === currentText.length) {
+                        isDeleting = true;
+                        setTimeout(typeAndDelete, 500); // Pause before deleting
+                    } else {
+                        setTimeout(typeAndDelete, speed);
+                    }
+                } else {
+                    // Deleting effect
+                    $('#output').text(currentText.substring(0, textIndex - 1));
+                    textIndex--;
+
+                    if (textIndex === 0) {
+                        isDeleting = false;
+                        index = (index + 1) % texts.length; // Move to the next text
+                        setTimeout(typeAndDelete, 500); // Pause before typing new text
+                    } else {
+                        setTimeout(typeAndDelete, speed);
+                    }
+                }
+            }
+
+            // Start typing and deleting effect
+            typeAndDelete();
+        });
+
+
+
+    </script>
+
+</body>
+
+</html>
